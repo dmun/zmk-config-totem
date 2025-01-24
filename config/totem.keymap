@@ -67,19 +67,19 @@
 
         nav_layer {
             bindings = <
-        &trans  &trans   &trans         &trans        &trans    &trans    &kp LC(D)  &kp LC(U)  &trans     &trans
-        &trans  &kp TAB  &kp LS(CARET)  &kp LS(DLLR)  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans  &trans   &trans         &trans        &trans    &trans    &trans     &trans     &trans     &trans  &trans
-                         &trans         &trans        &trans    &trans    &trans     &trans
+        &trans            &trans            &trans            &trans            &trans    &trans    &kp LC(D)  &kp LC(U)   &trans     &trans
+        &kp LA(NUMBER_4)  &kp LA(NUMBER_3)  &kp LA(NUMBER_2)  &kp LA(NUMBER_1)  &trans    &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT  &trans
+&trans  &trans            &trans            &trans            &trans            &trans    &trans    &kp CARET  &kp DOLLAR  &trans     &trans  &trans
+                                            &trans            &trans            &trans    &trans    &trans     &trans
             >;
         };
 
         sym_layer {
             bindings = <
-        &kp AT        &kp LS(LT)  &kp LS(GT)    &kp BSLH          &kp GRAVE        &kp LS(AMPS)   &kp LS(UNDER)          &kp LBKT      &kp RBKT      &kp SEMI
-        &kp LS(EXCL)  &kp MINUS   &kp LS(PLUS)  &kp EQUAL         &kp LS(POUND)    &kp LS(PIPE)   &kp LS(PRCNT)          &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)
-&trans  &trans        &kp FSLH    &kp LS(STAR)  &kp SINGLE_QUOTE  &trans           &kp LS(TILDE)  &kp LS(DOUBLE_QUOTES)  &kp LS(LBRC)  &kp LS(RBRC)  &trans         &trans
-                                  &trans        &trans            &trans           &trans         &trans                 &trans
+        &kp AT    &kp LS(LESS_THAN)  &kp LS(GT)  &kp BSLH          &kp GRAVE    &kp LS(AMPS)   &kp LS(UNDER)          &kp LBKT      &kp RBKT      &kp SEMI
+        &kp EXCL  &kp MINUS          &kp PLUS    &kp EQUAL         &kp HASH     &kp LS(PIPE)   &kp LS(PRCNT)          &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)
+&trans  &trans    &kp FSLH           &kp STAR    &kp SINGLE_QUOTE  &trans       &kp LS(TILDE)  &kp LS(DOUBLE_QUOTES)  &kp LS(LBRC)  &kp LS(RBRC)  &trans         &trans
+                                     &trans      &trans            &trans       &trans         &trans                 &trans
             >;
         };
 
