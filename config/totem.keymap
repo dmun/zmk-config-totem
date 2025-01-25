@@ -61,19 +61,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                        &kp Q        &kp W        &kp F        &kp P        &kp B           &kp J        &kp L           &kp U      &kp Y    &kp SEMI
-                        &tmt RGUI A  &tmt RALT R  &tmt LGUI S  &tmt LALT T  &kp G           &kp M        &kp N           &kp E      &kp I    &kp O
-&mt LEFT_CONTROL ENTER  &kp Z        &kp X        &kp C        &kp D        &kp V           &kp K        &kp H           &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE
-                                                  &kp LALT     &kp SPACE    &lt 1 ESCAPE    &lt 3 ENTER  &kp LEFT_SHIFT  &mo 2
+                        &kp Q  &kp W  &kp F     &kp P      &kp B           &kp J        &kp L           &kp U      &kp Y    &kp SEMI
+                        &kp A  &kp R  &kp S     &kp T      &kp G           &kp M        &kp N           &kp E      &kp I    &kp O
+&mt LEFT_CONTROL ENTER  &kp Z  &kp X  &kp C     &kp D      &kp V           &kp K        &kp H           &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE
+                                      &kp LALT  &kp SPACE  &lt 1 ESCAPE    &lt 3 ENTER  &kp LEFT_SHIFT  &mo 2
             >;
         };
 
         nav_layer {
             bindings = <
-        &trans        &trans        &trans          &trans   &trans    &trans    &kp LC(D)  &kp LC(U)   &trans     &trans
-        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp TAB  &trans    &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT  &trans
-&trans  &trans        &trans        &trans          &trans   &trans    &trans    &kp CARET  &kp DOLLAR  &trans     &trans  &trans
-                                    &trans          &trans   &trans    &trans    &trans     &trans
+        &trans    &trans    &trans    &trans    &trans    &trans    &kp LC(D)  &kp LC(U)   &trans     &trans
+        &kp RGUI  &kp RALT  &kp LGUI  &kp LALT  &trans    &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans    &kp CARET  &kp DOLLAR  &trans     &trans  &trans
+                            &trans    &trans    &trans    &trans    &trans     &trans
             >;
         };
 
