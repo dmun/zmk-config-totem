@@ -25,17 +25,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    behaviors {
-        mt_caps: mt_caps {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_CAPS";
-            bindings = <&kp>, <&caps_word>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -58,10 +47,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                         &kp Q  &kp W  &kp F     &kp P      &kp B          &kp J        &kp L                     &kp U      &kp Y    &kp SEMI
-                         &kp A  &kp R  &kp S     &kp T      &kp G          &kp M        &kp N                     &kp E      &kp I    &kp O
-&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C     &kp D      &kp V          &kp K        &kp H                     &kp COMMA  &kp DOT  &kp FSLH  &lt 3 SINGLE_QUOTE
-                                       &kp LALT  &kp SPACE  &lt 1 ENTER    &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE  &kp LGUI
+                         &kp Q  &kp W  &kp F     &kp P      &kp B    &kp J        &kp L           &kp U      &kp Y    &lt 2 SEMICOLON
+                         &kp A  &kp R  &kp S     &kp T      &kp G    &kp M        &kp N           &kp E      &kp I    &kp O
+&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C     &kp D      &kp V    &kp K        &kp H           &kp COMMA  &kp DOT  &kp FSLH         &kp BACKSPACE
+                                       &kp LALT  &kp SPACE  &mo 1    &lt 3 ENTER  &kp LEFT_SHIFT  &kp LGUI
             >;
         };
 
@@ -74,21 +63,30 @@
             >;
         };
 
+        num_layer {
+            bindings = <
+        &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp N0  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         sym_layer {
             bindings = <
-        &kp AT    &kp LS(LESS_THAN)  &kp LS(GT)  &kp BSLH          &kp GRAVE    &kp LS(AMPS)   &kp LS(UNDER)          &kp LBKT      &kp RBKT      &kp SEMI
-        &kp EXCL  &kp MINUS          &kp PLUS    &kp EQUAL         &kp HASH     &kp LS(PIPE)   &kp LS(PRCNT)          &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)
-&trans  &trans    &kp FSLH           &kp STAR    &kp SINGLE_QUOTE  &trans       &kp LS(TILDE)  &kp LS(DOUBLE_QUOTES)  &kp LS(LBRC)  &kp LS(RBRC)  &trans         &trans
+        &kp AT    &kp LS(LESS_THAN)  &kp LS(GT)  &kp BSLH          &kp GRAVE    &kp LS(AMPS)   &kp SEMI               &kp LBKT      &kp RBKT      &trans
+        &kp EXCL  &kp MINUS          &kp PLUS    &kp EQUAL         &kp HASH     &kp LS(PIPE)   &kp COLON              &kp LS(LPAR)  &kp LS(RPAR)  &kp PERCENT
+&trans  &trans    &kp FSLH           &kp STAR    &kp SINGLE_QUOTE  &trans       &kp LS(TILDE)  &kp LS(DOUBLE_QUOTES)  &kp LS(LBRC)  &kp LS(RBRC)  &trans       &trans
                                      &trans      &trans            &trans       &trans         &trans                 &trans
             >;
         };
 
-        num_layer {
+        sym_layer_m {
             bindings = <
-        &trans  &kp N7  &kp N8  &kp N9  &trans          &trans  &trans  &trans  &trans  &trans
-        &trans  &kp N4  &kp N5  &kp N6  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &kp NUMBER_0    &trans  &trans  &trans
+        &kp SEMI       &kp LBKT      &kp RBKT      &kp SEMI       &kp LS(AMPS)    &kp GRAVE      &kp BSLH   &kp LS(LT)    &kp LS(GT)  &kp LS(AT)
+        &kp LS(PRCNT)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp LS(PIPE)    &kp LS(POUND)  &kp EQUAL  &kp LS(PLUS)  &kp MINUS   &kp EXCLAMATION
+&trans  &trans         &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(DQT)    &trans          &kp LS(TILDE)  &kp SQT    &kp LS(STAR)  &kp FSLH    &trans           &trans
+                                     &trans        &trans         &trans          &trans         &trans     &trans
             >;
         };
     };
