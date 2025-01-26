@@ -61,19 +61,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                        &kp Q  &kp W  &kp F    &kp P      &kp B           &kp J        &kp L           &kp U      &kp Y    &kp SEMI
-                        &kp A  &kp R  &kp S    &kp T      &kp G           &kp M        &kp N           &kp E      &kp I    &kp O
-&mt LEFT_CONTROL ENTER  &kp Z  &kp X  &kp C    &kp D      &kp V           &kp K        &kp H           &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE
-                                      &kp TAB  &kp SPACE  &lt 1 ESCAPE    &lt 3 ENTER  &kp LEFT_SHIFT  &mo 2
+                         &kp Q  &kp W  &kp F     &kp P     &kp B          &kp J      &kp L           &kp U          &kp Y    &lt 2 SEMICOLON
+                         &kp A  &kp R  &kp S     &kp T     &kp G          &kp M      &kp N           &kp E          &kp I    &kp O
+&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C     &kp D     &kp V          &kp K      &kp H           &kp COMMA      &kp DOT  &kp FSLH         &mo 3
+                                       &kp LGUI  &kp LALT  &lt 1 ENTER    &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE
             >;
         };
 
         nav_layer {
             bindings = <
-        &trans    &trans    &trans    &trans    &trans    &trans    &kp LC(D)  &kp LC(U)   &trans     &trans
-        &kp RGUI  &kp RALT  &kp LGUI  &kp LALT  &trans    &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT  &trans
-&trans  &trans    &trans    &trans    &trans    &trans    &trans    &kp CARET  &kp DOLLAR  &trans     &trans  &trans
-                            &trans    &trans    &trans    &trans    &trans     &trans
+        &trans  &trans   &trans     &trans      &trans    &trans    &kp LC(D)  &kp LC(U)   &trans     &trans
+        &trans  &kp TAB  &kp CARET  &kp DOLLAR  &trans    &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT  &trans
+&trans  &trans  &trans   &trans     &trans      &trans    &trans    &kp CARET  &kp DOLLAR  &trans     &trans  &trans
+                         &trans     &trans      &trans    &trans    &trans     &trans
             >;
         };
 
@@ -101,6 +101,15 @@
         &kp LS(PRCNT)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp LS(PIPE)    &kp LS(POUND)  &kp EQUAL  &kp PLUS    &kp MINUS   &kp EXCLAMATION
 &trans  &trans         &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(DQT)    &trans          &kp LS(TILDE)  &kp SQT    &kp STAR    &kp FSLH    &trans           &trans
                                      &trans        &trans         &trans          &trans         &trans     &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
