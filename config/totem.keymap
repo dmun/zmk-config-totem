@@ -64,7 +64,7 @@
                          &kp Q  &kp W  &kp F     &kp P      &kp B          &kp J             &kp L            &kp U      &kp Y    &kp SEMI
                          &kp A  &kp R  &kp S     &kp T      &kp G          &kp M             &kp N            &kp E      &kp I    &kp O
 &mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C     &kp D      &kp V          &kp K             &kp H            &kp COMMA  &kp DOT  &kp FSLH  &lt 2 SINGLE_QUOTE
-                                       &kp LALT  &kp SPACE  &lt 1 ENTER    &mt LSHIFT ENTER  &lt 3 BACKSPACE  &kp LGUI
+                                       &kp LALT  &kp SPACE  &lt 1 UNDER    &mt LSHIFT ENTER  &lt 3 BACKSPACE  &kp LGUI
             >;
         };
 
@@ -72,7 +72,7 @@
             bindings = <
         &trans      &trans   &trans    &trans    &trans    &trans    &kp LC(D)  &kp LC(U)  &trans     &trans
         &kp LSHIFT  &kp TAB  &kp LGUI  &kp LALT  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans      &trans   &trans    &trans    &trans    &trans    &kp CARET  &kp DLLR   &trans     &trans  &trans
+&trans  &trans      &trans   &trans    &trans    &trans    &trans    &kp HOME   &kp END    &trans     &trans  &trans
                              &trans    &trans    &trans    &trans    &trans     &trans
             >;
         };
@@ -81,7 +81,7 @@
             bindings = <
         &kp STAR   &kp N7  &kp N8  &kp N9  &kp MINUS    &trans  &trans     &trans  &trans  &trans
         &kp SLASH  &kp N4  &kp N5  &kp N6  &kp PLUS     &trans  &trans     &trans  &trans  &trans
-&trans  &trans     &kp N1  &kp N2  &kp N3  &kp DOT      &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &mo 5      &kp N1  &kp N2  &kp N3  &kp DOT      &trans  &trans     &trans  &trans  &trans  &trans
                            &trans  &kp N0  &trans       &trans  &kp SPACE  &trans
             >;
         };
@@ -104,11 +104,11 @@
             >;
         };
 
-        layer_5 {
+        function_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
