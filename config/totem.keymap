@@ -64,7 +64,7 @@
                          &kp Q  &kp W  &kp F     &kp P      &kp B          &kp J             &kp L            &kp U      &kp Y    &kp SEMI
                          &kp A  &kp R  &kp S     &kp T      &kp G          &kp M             &kp N            &kp E      &kp I    &kp O
 &mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C     &kp D      &kp V          &kp K             &kp H            &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
-                                       &kp LALT  &kp SPACE  &lt 1 UNDER    &mt LSHIFT ENTER  &lt 4 BACKSPACE  &kp LGUI
+                                       &kp LALT  &kp SPACE  &lt 1 ENTER    &mt LSHIFT ENTER  &lt 4 BACKSPACE  &kp LGUI
             >;
         };
 
@@ -72,7 +72,7 @@
             bindings = <
         &trans      &trans   &trans    &trans    &trans    &trans    &kp LC(D)  &kp LC(U)  &trans     &trans
         &kp LSHIFT  &kp TAB  &kp LGUI  &kp LALT  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans      &trans   &trans    &trans    &trans    &trans    &kp HOME   &kp END    &trans     &trans  &trans
+&trans  &trans      &trans   &trans    &trans    &trans    &trans    &kp CARET  &kp DOLLAR &trans     &trans  &trans
                              &trans    &trans    &trans    &trans    &trans     &trans
             >;
         };
