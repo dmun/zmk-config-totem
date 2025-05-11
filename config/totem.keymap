@@ -64,7 +64,7 @@
                          &kp Q  &kp W  &kp F     &kp P      &kp B          &kp J             &kp L            &kp U      &kp Y    &kp SEMI
                          &kp A  &kp R  &kp S     &kp T      &kp G          &kp M             &kp N            &kp E      &kp I    &kp O
 &mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C     &kp D      &kp V          &kp K             &kp H            &kp COMMA  &kp DOT  &kp FSLH  &lt 2 SINGLE_QUOTE
-                                       &kp LALT  &kp SPACE  &lt 1 UNDER    &mt LSHIFT ENTER  &lt 3 BACKSPACE  &kp LGUI
+                                       &kp LALT  &kp SPACE  &lt 1 ENTER    &mt LSHIFT ENTER  &lt 3 BACKSPACE  &kp LGUI
             >;
         };
 
@@ -72,7 +72,7 @@
             bindings = <
         &trans      &trans   &trans    &trans    &trans    &trans    &kp LC(D)  &kp LC(U)  &trans     &trans
         &kp LSHIFT  &kp TAB  &kp LGUI  &kp LALT  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans      &trans   &trans    &trans    &trans    &trans    &kp HOME   &kp END    &trans     &trans  &trans
+&trans  &trans      &trans   &trans    &trans    &trans    &trans    &kp CARET  &kp DOLLAR &trans     &trans  &trans
                              &trans    &trans    &trans    &trans    &trans     &trans
             >;
         };
@@ -90,7 +90,7 @@
             bindings = <
         &kp AT        &kp LS(LESS_THAN)  &kp LS(GT)  &kp AMPS          &kp GRAVE    &kp LS(AMPS)   &kp PERCENT            &kp LBKT      &kp RBKT      &trans
         &kp EXCL      &kp MINUS          &kp PLUS    &kp EQUAL         &kp HASH     &kp LS(PIPE)   &kp UNDER              &kp LS(LPAR)  &kp LS(RPAR)  &kp COLON
-&trans  &kp QUESTION  &kp FSLH           &kp STAR    &kp SINGLE_QUOTE  &trans       &kp LS(TILDE)  &kp LS(DOUBLE_QUOTES)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BACKSLASH  &kp DOUBLE_QUOTES
+&trans  &kp QUESTION  &kp FSLH           &kp STAR    &kp SINGLE_QUOTE  &trans       &kp LS(TILDE)  &kp LS(DOUBLE_QUOTES)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BACKSLASH  &lt 2 DOUBLE_QUOTES
                                          &trans      &trans            &trans       &trans         &trans                 &trans
             >;
         };
