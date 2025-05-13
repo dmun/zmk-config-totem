@@ -63,7 +63,7 @@
             bindings = <
                 &kp Q  &kp W  &kp E     &kp R        &kp T               &kp Y      &kp U            &kp I         &kp O    &kp P
                 &kp A  &kp S  &kp D     &kp F        &kp G               &kp H      &kp J            &kp K         &kp L    &kp SEMI
-&mt LSHIFT TAB  &kp Z  &kp X  &kp C     &kp V        &kp B               &kp N      &kp M            &kp COMMA     &kp DOT  &kp FSLH  &lt 2 SINGLE_QUOTE
+&mt LSHIFT TAB  &kp Z  &kp X  &kp C     &kp V        &kp B               &kp N      &kp M            &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
                               &kp LALT  &lt 5 ENTER  &mt LCTRL ESCAPE    &kp SPACE  &lt 1 BACKSPACE  &kp LEFT_GUI
             >;
         };
@@ -106,10 +106,10 @@
 
         layer_5 {
             bindings = <
-        &kp N1     &kp N2         &kp N3         &kp N4        &kp N5           &kp N6         &kp N7         &kp N8        &kp N9        &kp N0
-        &kp EXCL   &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
-&trans  &kp GRAVE  &kp LS(TILDE)  &kp SQT        &kp LS(DQT)   &trans           &kp LS(TILDE)  &kp MINUS      &kp LS(PLUS)  &kp EQUAL     &kp LS(UNDER)  &lt 2 DOUBLE_QUOTES
-                                  &trans         &trans        &trans           &trans         &kp LS(UNDER)  &trans
+        &kp N1        &kp N2      &kp N3         &kp N4        &kp N5           &kp N6         &kp N7         &kp N8        &kp N9        &kp N0
+        &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
+&trans  &kp FSLH      &kp MINUS   &kp LS(PLUS)   &kp EQUAL     &kp BSLH         &kp LS(PIPE)   &kp LBKT       &kp RBKT      &kp LS(LBRC)  &kp LS(RBRC)  &kp GRAVE
+                                  &trans         &trans        &trans           &trans         &kp LS(UNDER)  &kp DOT
             >;
         };
     };
